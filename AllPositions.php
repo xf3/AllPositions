@@ -18,7 +18,7 @@ class AllPositions {
 	private $_lastError = null;
 
 	/**
-	 * @var xmlrpc_client
+	 * @var \xmlrpc_client
 	 */
 	private $_client = null;
 
@@ -34,7 +34,7 @@ class AllPositions {
 	/**
 	 * Creates API XMLRPC client
 	 *
-	 * @return xmlrpc_client
+	 * @return \xmlrpc_client
 	 */
 	private function _getClient() {
 		if ($this->_client === null) {
