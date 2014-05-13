@@ -1,0 +1,11 @@
+{
+	"name": "xf3/allpositionsru",
+	"description": "allpositions.ru API client",
+	"keywords": ["api", "xmlrpc", "client", "allpositions.ru"],
+	"homepage": "https://github.com/xf3/allpositionsru",
+	"type": "library",
+	"license": "BSD-3-Clause",
+	"require": {
+		"phpxmlrpc/phpxmlrpc": "dev-master"
+	}
+}
