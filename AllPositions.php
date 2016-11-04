@@ -47,6 +47,7 @@ class AllPositions {
 
 			$GLOBALS ['xmlrpc_defencoding'] = "UTF8";
 			$GLOBALS ['xmlrpc_internalencoding'] = "UTF-8";
+			$this->_client->request_charset_encoding = 'UTF-8';
 
 			$this->_client->setcookie('api_key', $this->apiKey, '/', 'allpositions.ru');
 		}
@@ -82,7 +83,7 @@ class AllPositions {
 		}
 
 		$msg = new \xmlrpcmsg($method, $params);
-
+		
 		$res = $client->send($msg);
 
 		if ($res->faultCode()) {
