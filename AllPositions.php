@@ -83,7 +83,7 @@ class AllPositions {
 		}
 
 		$msg = new \xmlrpcmsg($method, $params);
-		
+
 		$res = $client->send($msg);
 
 		if ($res->faultCode()) {
